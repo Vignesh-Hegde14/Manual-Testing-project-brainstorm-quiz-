@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Welcome Quiz</title></head>
+<body>
+<h2>Welcome to Brainstormer Quiz</h2>
+<br> 
+<h2> above 13 allowed </h2>
+<br>
+<form onsubmit="login(); return false;">
+  <input type="text" id="name" placeholder="Enter your name"><br><br>
+  <input type="number" id="age" placeholder="Enter your age"><br><br>
+  <button type="submit">Start Quiz</button>
+</form>
+
+<script>
+function login(){
+  // BUG: Allows age below 13
+  window.location.href = "q1.html";
+}
+</script>
+</body>
+</html>
